@@ -67,20 +67,17 @@ This is a full-stack to-do list application built using Node.js, WebSockets (Soc
 
 ### Backend Setup
 
-#### Clone the repository:
-```
-git clone https://github.com/Mallikarjuna-dev/kazamev-task.git
+- Clone the repository:
 
-cd kazamev-task
+git clone https://github.com/your-username/todo-list-ws.git
+cd todo-list-ws
 
-cd backend
-```
-#### Install dependencies:
-```
-- npm install
-```
+- Install dependencies:
+
+npm install
+
 Create a .env file in the root directory and add the following credentials:
-```
+
 REDIS*HOST=redis-12675.c212.ap-south-1-1.ec2.cloud.redislabs.com
 REDIS_PORT=12675
 REDIS_USERNAME=default
@@ -88,7 +85,7 @@ REDIS_PASSWORD=dssYpBnYQrl01GbCGVhVq2e4dYvUrKJB
 MONGO_URI=mongodb+srv://assignment_user:HCgEj5zv8Hxwa4xO@test-cluster.6f94f5o.mongodb.net/
 DB_NAME=assignment
 COLLECTION_NAME=assignment*<YOUR_FIRST_NAME>
-```
+
 - Start the backend server:
 ```
 npm run dev
