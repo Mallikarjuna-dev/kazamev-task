@@ -36,19 +36,51 @@ This is a full-stack to-do list application built using Node.js, WebSockets (Soc
 
 - MongoDB Atlas access
 
+### Project tructure
+
+
+/kazamev-task
+├── backend
+│   ├── configs
+│   │    └── config.js
+│   ├── models
+│   │    └──Task.js
+│   ├── routes
+│   │    └── taskRoutes.js
+│   ├── server.js
+│   ├── .gitignore
+│   ├── package.json
+│   ├── .env
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   │   ├──Task.js
+│   │   │   └──TaskList.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   ├── App.css/
+│   ├── .gitignore
+│   ├── package.json
+│   ├── tailwind.config.js
+└── README.md
+
+
 ### Backend Setup
 
-- Clone the repository:
+#### Clone the repository:
+```
+git clone https://github.com/Mallikarjuna-dev/kazamev-task.git
 
-git clone https://github.com/your-username/todo-list-ws.git
-cd todo-list-ws
+cd kazamev-task
 
-- Install dependencies:
-
-npm install
-
+cd backend
+```
+#### Install dependencies:
+```
+- npm install
+```
 Create a .env file in the root directory and add the following credentials:
-
+```
 REDIS*HOST=redis-12675.c212.ap-south-1-1.ec2.cloud.redislabs.com
 REDIS_PORT=12675
 REDIS_USERNAME=default
@@ -56,21 +88,44 @@ REDIS_PASSWORD=dssYpBnYQrl01GbCGVhVq2e4dYvUrKJB
 MONGO_URI=mongodb+srv://assignment_user:HCgEj5zv8Hxwa4xO@test-cluster.6f94f5o.mongodb.net/
 DB_NAME=assignment
 COLLECTION_NAME=assignment*<YOUR_FIRST_NAME>
-
+```
 - Start the backend server:
-
+```
 npm run dev
-
+```
 ### Frontend Setup
 
 - Navigate to the frontend directory:
-
+```
 cd frontend
-
+```
 - Install dependencies:
-
+```
 npm install
-
+```
 - Start the frontend server:
-
+```
 npm run start
+```
+### API Endpoints
+
+Method
+
+- GET
+
+Endpoint
+
+```
+/fetchAllTasks
+```
+Fetch all tasks from DB
+
+### URLs
+
+Backend (Localhost): http://localhost:8080
+
+Frontend (Localhost): http://localhost:3000
+
+Deployed Backend: https://kazam-ev-task.onrender.com
+
+Deployed Frontend: https://kazamev-task.vercel.app/
