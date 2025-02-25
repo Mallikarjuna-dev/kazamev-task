@@ -38,6 +38,7 @@ This is a full-stack to-do list application built using Node.js, WebSockets (Soc
 
 ### Project tructure
 
+```
 /kazamev-task
 ├── backend
 │   ├── configs
@@ -62,6 +63,7 @@ This is a full-stack to-do list application built using Node.js, WebSockets (Soc
 │   ├── package.json
 │   ├── tailwind.config.js
 └── README.md
+```
 
 ### Backend Setup
 
